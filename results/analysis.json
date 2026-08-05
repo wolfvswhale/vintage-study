@@ -1,0 +1,168 @@
+{
+  "date_correlation": [
+    {
+      "detector": "char tf-idf",
+      "rho_within_raid": 0.3066433814465952,
+      "n_raid": 11,
+      "rho_all": -0.262668607306659,
+      "n_all": 18
+    },
+    {
+      "detector": "word tf-idf",
+      "rho_within_raid": 0.3386807496574335,
+      "n_raid": 11,
+      "rho_all": -0.5532586807443407,
+      "n_all": 18
+    },
+    {
+      "detector": "style features",
+      "rho_within_raid": 0.416485786740898,
+      "n_raid": 11,
+      "rho_all": 0.263702735681882,
+      "n_all": 18
+    }
+  ],
+  "instruction_tuning": [
+    {
+      "detector": "char tf-idf",
+      "mean_delta": 0.29155092592592596,
+      "deltas": [
+        0.31250000000000006,
+        0.1777777777777778,
+        0.384375
+      ]
+    },
+    {
+      "detector": "word tf-idf",
+      "mean_delta": 0.26018518518518513,
+      "deltas": [
+        0.26736111111111105,
+        0.14756944444444442,
+        0.36562500000000003
+      ]
+    },
+    {
+      "detector": "style features",
+      "mean_delta": 0.07569444444444445,
+      "deltas": [
+        -0.048611111111111105,
+        0.0715277777777778,
+        0.20416666666666666
+      ]
+    }
+  ],
+  "corpus_effect": [
+    {
+      "detector": "char tf-idf",
+      "raid_mean": 0.55390625,
+      "maga_mean": 0.2998763094051794
+    },
+    {
+      "detector": "word tf-idf",
+      "raid_mean": 0.5158854166666667,
+      "maga_mean": 0.18864729925014023
+    },
+    {
+      "detector": "style features",
+      "raid_mean": 0.50234375,
+      "maga_mean": 0.5326981696614602
+    }
+  ],
+  "length": [
+    {
+      "model": "gpt2",
+      "median_words": 351.5,
+      "ratio_to_human": 1.8403141361256545
+    },
+    {
+      "model": "gpt3",
+      "median_words": 137.0,
+      "ratio_to_human": 0.7172774869109948
+    },
+    {
+      "model": "cohere",
+      "median_words": 214.5,
+      "ratio_to_human": 1.1230366492146597
+    },
+    {
+      "model": "mpt",
+      "median_words": 347.5,
+      "ratio_to_human": 1.8193717277486912
+    },
+    {
+      "model": "mpt-chat",
+      "median_words": 144.0,
+      "ratio_to_human": 0.7539267015706806
+    },
+    {
+      "model": "chatgpt",
+      "median_words": 278.0,
+      "ratio_to_human": 1.455497382198953
+    },
+    {
+      "model": "gpt4",
+      "median_words": 286.0,
+      "ratio_to_human": 1.4973821989528795
+    },
+    {
+      "model": "cohere-chat",
+      "median_words": 169.0,
+      "ratio_to_human": 0.8848167539267016
+    },
+    {
+      "model": "llama-chat",
+      "median_words": 275.0,
+      "ratio_to_human": 1.4397905759162304
+    },
+    {
+      "model": "mistral",
+      "median_words": 276.0,
+      "ratio_to_human": 1.4450261780104712
+    },
+    {
+      "model": "mistral-chat",
+      "median_words": 200.0,
+      "ratio_to_human": 1.0471204188481675
+    },
+    {
+      "model": "gpt-4o-mini",
+      "median_words": 228,
+      "ratio_to_human": 1.193717277486911
+    },
+    {
+      "model": "llama-3.1-8b",
+      "median_words": 252,
+      "ratio_to_human": 1.3193717277486912
+    },
+    {
+      "model": "deepseek-v3",
+      "median_words": 295,
+      "ratio_to_human": 1.544502617801047
+    },
+    {
+      "model": "gemini-2.0-flash",
+      "median_words": 273,
+      "ratio_to_human": 1.4293193717277486
+    },
+    {
+      "model": "qwen3-8b",
+      "median_words": 190.5,
+      "ratio_to_human": 0.9973821989528796
+    },
+    {
+      "model": "qwen3-plus",
+      "median_words": 216,
+      "ratio_to_human": 1.130890052356021
+    },
+    {
+      "model": "mistral-medium",
+      "median_words": 282,
+      "ratio_to_human": 1.4764397905759161
+    }
+  ],
+  "length_vs_recall_rho": 0.02786377708978328,
+  "summary": {
+    "mean_rho_within_raid": 0.35393663928164226,
+    "mean_tuning_effect": 0.2091435185185185
+  }
+}

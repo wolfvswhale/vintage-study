@@ -1,0 +1,24 @@
+{
+  "dates": {
+    "gpt2": "2019-02-14",
+    "gpt3": "2022-01-27",
+    "chatgpt": "2023-06-13",
+    "gpt4": "2023-06-13",
+    "cohere": "2022-11-15",
+    "cohere-chat": "2023-07-13",
+    "mpt": "2023-05-05",
+    "mpt-chat": "2023-05-05",
+    "llama-chat": "2023-07-18",
+    "mistral": "2023-09-27",
+    "mistral-chat": "2023-09-27",
+    "gpt-4o-mini": "2024-07-18",
+    "llama-3.1-8b": "2024-07-23",
+    "gemini-2.0-flash": "2025-02-05",
+    "deepseek-v3": "2024-12-26",
+    "qwen3-8b": "2025-04-29",
+    "qwen3-plus": "2025-04-29",
+    "mistral-medium": "2025-05-07",
+    "deepseek-r1-0528": "2025-05-28"
+  },
+  "notes": "Dates are public announcement dates for the specific checkpoint named by the source corpus. gpt3/chatgpt/gpt4 use the OpenAI snapshot IDs given in RAID Appendix E.2 (text-davinci-002, gpt-3.5-turbo-0613, gpt-4-0613). Base and chat variants of the same model share a date where they shipped together. Any date can be argued with; the mapping is in build_corpus.py so that argument is possible."
+}

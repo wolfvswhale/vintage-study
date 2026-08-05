@@ -1,0 +1,464 @@
+{
+  "train_models": [
+    "chatgpt",
+    "cohere",
+    "gpt2",
+    "gpt3",
+    "gpt4",
+    "mpt",
+    "mpt-chat"
+  ],
+  "train_before": "2023-07-01",
+  "detectors": {
+    "char tf-idf": {
+      "threshold": 0.7185578733126128,
+      "achieved_fpr": 0.05134474327628362,
+      "per_generator": {
+        "gpt2": {
+          "release_date": "2019-02-14",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.2951388888888889,
+          "mean_score": 0.6198011204051173,
+          "in_training": true
+        },
+        "gpt3": {
+          "release_date": "2022-01-27",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.4375,
+          "mean_score": 0.6770901234722753,
+          "in_training": true
+        },
+        "cohere": {
+          "release_date": "2022-11-15",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.3159722222222222,
+          "mean_score": 0.6246134067362417,
+          "in_training": true
+        },
+        "mpt": {
+          "release_date": "2023-05-05",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.4236111111111111,
+          "mean_score": 0.6650826883207598,
+          "in_training": true
+        },
+        "mpt-chat": {
+          "release_date": "2023-05-05",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.7361111111111112,
+          "mean_score": 0.7714164001052999,
+          "in_training": true
+        },
+        "chatgpt": {
+          "release_date": "2023-06-13",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.7604166666666666,
+          "mean_score": 0.7957535957634135,
+          "in_training": true
+        },
+        "gpt4": {
+          "release_date": "2023-06-13",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.7465277777777778,
+          "mean_score": 0.7761070656522011,
+          "in_training": true
+        },
+        "cohere-chat": {
+          "release_date": "2023-07-13",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.49375,
+          "mean_score": 0.6841710885736949,
+          "in_training": false
+        },
+        "llama-chat": {
+          "release_date": "2023-07-18",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.7166666666666667,
+          "mean_score": 0.7672598832410938,
+          "in_training": false
+        },
+        "mistral": {
+          "release_date": "2023-09-27",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.3104166666666667,
+          "mean_score": 0.6276873674755731,
+          "in_training": false
+        },
+        "mistral-chat": {
+          "release_date": "2023-09-27",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.6947916666666667,
+          "mean_score": 0.7637530616439198,
+          "in_training": false
+        },
+        "gpt-4o-mini": {
+          "release_date": "2024-07-18",
+          "corpus": "MAGA",
+          "n": 563,
+          "recall_at_5pct_fpr": 0.11012433392539965,
+          "mean_score": 0.46371497061998407,
+          "in_training": false
+        },
+        "llama-3.1-8b": {
+          "release_date": "2024-07-23",
+          "corpus": "MAGA",
+          "n": 555,
+          "recall_at_5pct_fpr": 0.4018018018018018,
+          "mean_score": 0.6645685998515595,
+          "in_training": false
+        },
+        "deepseek-v3": {
+          "release_date": "2024-12-26",
+          "corpus": "MAGA",
+          "n": 551,
+          "recall_at_5pct_fpr": 0.5045372050816697,
+          "mean_score": 0.698148478699882,
+          "in_training": false
+        },
+        "gemini-2.0-flash": {
+          "release_date": "2025-02-05",
+          "corpus": "MAGA",
+          "n": 557,
+          "recall_at_5pct_fpr": 0.18312387791741472,
+          "mean_score": 0.5636502991821278,
+          "in_training": false
+        },
+        "qwen3-8b": {
+          "release_date": "2025-04-29",
+          "corpus": "MAGA",
+          "n": 580,
+          "recall_at_5pct_fpr": 0.35344827586206895,
+          "mean_score": 0.6000492559169057,
+          "in_training": false
+        },
+        "qwen3-plus": {
+          "release_date": "2025-04-29",
+          "corpus": "MAGA",
+          "n": 549,
+          "recall_at_5pct_fpr": 0.10382513661202186,
+          "mean_score": 0.4535767745662743,
+          "in_training": false
+        },
+        "mistral-medium": {
+          "release_date": "2025-05-07",
+          "corpus": "MAGA",
+          "n": 563,
+          "recall_at_5pct_fpr": 0.4422735346358792,
+          "mean_score": 0.6775626450946001,
+          "in_training": false
+        }
+      }
+    },
+    "word tf-idf": {
+      "threshold": 0.7372929221534291,
+      "achieved_fpr": 0.05134474327628362,
+      "per_generator": {
+        "gpt2": {
+          "release_date": "2019-02-14",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.2673611111111111,
+          "mean_score": 0.6258685179726052,
+          "in_training": true
+        },
+        "gpt3": {
+          "release_date": "2022-01-27",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.4409722222222222,
+          "mean_score": 0.7056383208435224,
+          "in_training": true
+        },
+        "cohere": {
+          "release_date": "2022-11-15",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.3055555555555556,
+          "mean_score": 0.6374319639860536,
+          "in_training": true
+        },
+        "mpt": {
+          "release_date": "2023-05-05",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.4340277777777778,
+          "mean_score": 0.6932696949549433,
+          "in_training": true
+        },
+        "mpt-chat": {
+          "release_date": "2023-05-05",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.7013888888888888,
+          "mean_score": 0.7743580970059997,
+          "in_training": true
+        },
+        "chatgpt": {
+          "release_date": "2023-06-13",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.7951388888888888,
+          "mean_score": 0.8028723155057416,
+          "in_training": true
+        },
+        "gpt4": {
+          "release_date": "2023-06-13",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.6597222222222222,
+          "mean_score": 0.7711202057785764,
+          "in_training": true
+        },
+        "cohere-chat": {
+          "release_date": "2023-07-13",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.453125,
+          "mean_score": 0.6938836941301981,
+          "in_training": false
+        },
+        "llama-chat": {
+          "release_date": "2023-07-18",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.6447916666666667,
+          "mean_score": 0.7650527759601479,
+          "in_training": false
+        },
+        "mistral": {
+          "release_date": "2023-09-27",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.3,
+          "mean_score": 0.6443851831011537,
+          "in_training": false
+        },
+        "mistral-chat": {
+          "release_date": "2023-09-27",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.665625,
+          "mean_score": 0.7679998392991055,
+          "in_training": false
+        },
+        "gpt-4o-mini": {
+          "release_date": "2024-07-18",
+          "corpus": "MAGA",
+          "n": 563,
+          "recall_at_5pct_fpr": 0.15097690941385436,
+          "mean_score": 0.596634277913369,
+          "in_training": false
+        },
+        "llama-3.1-8b": {
+          "release_date": "2024-07-23",
+          "corpus": "MAGA",
+          "n": 555,
+          "recall_at_5pct_fpr": 0.21441441441441442,
+          "mean_score": 0.6178393626532673,
+          "in_training": false
+        },
+        "deepseek-v3": {
+          "release_date": "2024-12-26",
+          "corpus": "MAGA",
+          "n": 551,
+          "recall_at_5pct_fpr": 0.1869328493647913,
+          "mean_score": 0.615482838316721,
+          "in_training": false
+        },
+        "gemini-2.0-flash": {
+          "release_date": "2025-02-05",
+          "corpus": "MAGA",
+          "n": 557,
+          "recall_at_5pct_fpr": 0.12028725314183124,
+          "mean_score": 0.5864313468985015,
+          "in_training": false
+        },
+        "qwen3-8b": {
+          "release_date": "2025-04-29",
+          "corpus": "MAGA",
+          "n": 580,
+          "recall_at_5pct_fpr": 0.3293103448275862,
+          "mean_score": 0.6676158708500973,
+          "in_training": false
+        },
+        "qwen3-plus": {
+          "release_date": "2025-04-29",
+          "corpus": "MAGA",
+          "n": 549,
+          "recall_at_5pct_fpr": 0.09836065573770492,
+          "mean_score": 0.5605626634621771,
+          "in_training": false
+        },
+        "mistral-medium": {
+          "release_date": "2025-05-07",
+          "corpus": "MAGA",
+          "n": 563,
+          "recall_at_5pct_fpr": 0.2202486678507993,
+          "mean_score": 0.6298796270809209,
+          "in_training": false
+        }
+      }
+    },
+    "style features": {
+      "threshold": 0.885704044122098,
+      "achieved_fpr": 0.05134474327628362,
+      "per_generator": {
+        "gpt2": {
+          "release_date": "2019-02-14",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.4965277777777778,
+          "mean_score": 0.7589456737717973,
+          "in_training": true
+        },
+        "gpt3": {
+          "release_date": "2022-01-27",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.2534722222222222,
+          "mean_score": 0.6604989253881571,
+          "in_training": true
+        },
+        "cohere": {
+          "release_date": "2022-11-15",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.3159722222222222,
+          "mean_score": 0.6927669858392517,
+          "in_training": true
+        },
+        "mpt": {
+          "release_date": "2023-05-05",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.3854166666666667,
+          "mean_score": 0.6404686837838942,
+          "in_training": true
+        },
+        "mpt-chat": {
+          "release_date": "2023-05-05",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.3368055555555556,
+          "mean_score": 0.7349141071236058,
+          "in_training": true
+        },
+        "chatgpt": {
+          "release_date": "2023-06-13",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.6180555555555556,
+          "mean_score": 0.8311691870913667,
+          "in_training": true
+        },
+        "gpt4": {
+          "release_date": "2023-06-13",
+          "corpus": "RAID",
+          "n": 288,
+          "recall_at_5pct_fpr": 0.7569444444444444,
+          "mean_score": 0.9068429586507626,
+          "in_training": true
+        },
+        "cohere-chat": {
+          "release_date": "2023-07-13",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.3875,
+          "mean_score": 0.7240708401096793,
+          "in_training": false
+        },
+        "llama-chat": {
+          "release_date": "2023-07-18",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.771875,
+          "mean_score": 0.9061213174691641,
+          "in_training": false
+        },
+        "mistral": {
+          "release_date": "2023-09-27",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.3229166666666667,
+          "mean_score": 0.6060131841555023,
+          "in_training": false
+        },
+        "mistral-chat": {
+          "release_date": "2023-09-27",
+          "corpus": "RAID",
+          "n": 960,
+          "recall_at_5pct_fpr": 0.5270833333333333,
+          "mean_score": 0.8158795724312974,
+          "in_training": false
+        },
+        "gpt-4o-mini": {
+          "release_date": "2024-07-18",
+          "corpus": "MAGA",
+          "n": 563,
+          "recall_at_5pct_fpr": 0.35879218472468916,
+          "mean_score": 0.6920183386787396,
+          "in_training": false
+        },
+        "llama-3.1-8b": {
+          "release_date": "2024-07-23",
+          "corpus": "MAGA",
+          "n": 555,
+          "recall_at_5pct_fpr": 0.7171171171171171,
+          "mean_score": 0.8442637469949569,
+          "in_training": false
+        },
+        "deepseek-v3": {
+          "release_date": "2024-12-26",
+          "corpus": "MAGA",
+          "n": 551,
+          "recall_at_5pct_fpr": 0.7931034482758621,
+          "mean_score": 0.8833459186109028,
+          "in_training": false
+        },
+        "gemini-2.0-flash": {
+          "release_date": "2025-02-05",
+          "corpus": "MAGA",
+          "n": 557,
+          "recall_at_5pct_fpr": 0.4955116696588869,
+          "mean_score": 0.7557072728691447,
+          "in_training": false
+        },
+        "qwen3-8b": {
+          "release_date": "2025-04-29",
+          "corpus": "MAGA",
+          "n": 580,
+          "recall_at_5pct_fpr": 0.4189655172413793,
+          "mean_score": 0.7327357887211998,
+          "in_training": false
+        },
+        "qwen3-plus": {
+          "release_date": "2025-04-29",
+          "corpus": "MAGA",
+          "n": 549,
+          "recall_at_5pct_fpr": 0.30418943533697634,
+          "mean_score": 0.6851598366550942,
+          "in_training": false
+        },
+        "mistral-medium": {
+          "release_date": "2025-05-07",
+          "corpus": "MAGA",
+          "n": 563,
+          "recall_at_5pct_fpr": 0.6412078152753108,
+          "mean_score": 0.8222771038091393,
+          "in_training": false
+        }
+      }
+    }
+  }
+}
