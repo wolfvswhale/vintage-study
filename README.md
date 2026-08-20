@@ -38,7 +38,7 @@ The three detectors do not agree, and where they disagree is the interesting par
 
 Both n-gram detectors collapse when the corpus changes. The interpretable style-feature detector, built from sentence-length variance, paragraph shape, punctuation rates, and lexical diversity, does not move at all.
 
-If that holds up, a good deal of what the literature reports as detector degradation on newer models is surface-feature brittleness rather than anything about the models. Structural features survive the shift that breaks n-grams.
+If that holds up, a good deal of what the literature reports as detector degradation on newer models is surface-feature brittleness instead of anything about the models. Structural features survive the shift that breaks n-grams.
 
 ## Controls
 
@@ -56,17 +56,17 @@ If that holds up, a good deal of what the literature reports as detector degrada
 
 **The MAGA comparison is confounded.** Corpus, genre, and prompt construction all change at the same boundary as the date. Only the within-RAID correlation isolates date, and it rests on eleven generators.
 
-**Release dates are contestable.** They are announcement dates for the specific checkpoint named by each corpus, listed in `build_corpus.py` so the mapping can be argued with rather than trusted. RAID's paper and its README disagree about whether its GPT-3 is `text-davinci-002` or `-003`; the paper is used here.
+**Release dates are contestable.** They are announcement dates for the specific checkpoint named by each corpus, listed in `build_corpus.py`. RAID's paper and its README disagree about whether its GPT-3 is `text-davinci-002` or `-003`; the paper is used here.
 
 **Three detectors, all linear, all trained on one corpus.** A fine-tuned transformer might behave differently.
 
-**No 2026 generators.** The newest here is May 2025, because that is the newest with per-generator labels in a public paired corpus. Extending the curve is the obvious next step and needs generation rather than reuse.
+**No 2026 generators.** The newest here is May 2025, because that is the newest with per-generator labels in a public paired corpus. Extending the curve is the obvious next step and needs generation instead of reuse.
 
 ## Running it
 
 ```bash
 pip install -r requirements.txt
-python build_corpus.py --per-cell 60     # ~20 min, streams RAID rather than downloading 11GB
+python build_corpus.py --per-cell 60     # ~20 min, streams RAID instead of downloading 11GB
 python experiment.py --train-before 2023-07-01
 python analyse.py
 python plot.py
